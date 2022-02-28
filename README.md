@@ -22,13 +22,13 @@ Only `method`, `time` and `threads` arguments are supported.
 HTTP attack:
 
 ```bash
-bash attack.sh --method HTTP --time 100 --threads 15
+./attack.sh --method HTTP --time 100 --threads 15
 ```
 
 UDP attack:
 
 ```bash
-bash attack.sh --method UDP --time 100 --threads 15
+./attack.sh --method UDP --time 100 --threads 15
 ```
 
 ---
