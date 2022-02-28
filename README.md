@@ -17,6 +17,8 @@ nvm use 16
 
 ## Attack
 
+Only `method`, `time` and `threads` arguments are supported.
+
 HTTP attack:
 
 ```bash
