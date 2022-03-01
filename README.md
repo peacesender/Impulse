@@ -119,7 +119,7 @@ If you want to run a specific attack, see examples below.
 - Termux:
   - `pkg update`
   - `pkg install python3 python3-pip git -y`
-  - `git clone https://github.com/LimerBoy/Impulse`
+  - `git clone https://github.com/peacesender/Impulse`
   - `cd Impulse/`
   - `pip3 install -r requirements.txt`
   - `python3 impulse.py --help`
