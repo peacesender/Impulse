@@ -21,10 +21,10 @@ Install node v16. For instance, using `nvm`:
 
 ```bash
 # Install nvm first
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash \
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash 
 # Then install node v16
-nvm install 16 \
-nvm use 16 \
+nvm install 16
+nvm use 16
 ```
 
 ## Attack
