@@ -46,6 +46,10 @@ Only `method`, `time` and `threads` arguments are supported.
 
 ---
 
+**Below is README from the original repo**
+
+---
+
 # :bomb: Impulse
 
 ## Modern Denial-of-service ToolKit
