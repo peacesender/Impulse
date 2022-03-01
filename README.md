@@ -41,21 +41,21 @@ If you want to run all attacks then simply execute `start.sh`:
 ./start.sh
 ```
 
-HTTP attack:
+## Examples
+
+**HTTP attack**
 
 ```bash
 ./attack.sh --method HTTP --time 100 --threads 15
 ```
 
-UDP attack:
+**UDP attack**
 
 ```bash
 ./attack.sh --method UDP --time 100 --threads 15
 ```
 
-Only `method`, `time` and `threads` arguments are supported.
-
-### Run all attacks in tmux session:
+**Run all attacks in one tmux session**
 ```bash
 tmux kill-session -t "peace" 2>/dev/null
 tmux new-session -d -s "peace" "./attack.sh --method UDP --time 50 --threads 20" \; \
