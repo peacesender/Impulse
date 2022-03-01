@@ -32,7 +32,7 @@ do
   fi
   echo "Done!"
   echo "Start attacking..."
-  if [ "$method" === "HTTP" ]; then
+  if [ "$method" == "HTTP" ]; then
     cat urls | xargs -n1 -I % bash -c "${attack}"
   else
     cat ips | xargs -n1 -I % bash -c "${attack}"
