@@ -31,7 +31,7 @@ nvm use 16
 
 ## Install Impulse
 
-Close this repo and follow the [installing instructions below](https://github.com/peacesender/Impulse#gift-installation).
+Clone this repo and follow the [installing instructions below](https://github.com/peacesender/Impulse#gift-installation).
 
 ## Attack
 
