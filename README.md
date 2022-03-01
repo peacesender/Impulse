@@ -32,7 +32,14 @@ nvm use 16
 1. SSH to your VPS.
 2. Clone this repo.
 3. Install all dependencies mentioned above.
-4. Run. See examples below:
+4. Run. See examples below.
+
+If you want to run all attacks then simply execute `start.sh`:
+
+```bash
+# Runs all attacks in tmux detached sessions
+./start.sh
+```
 
 HTTP attack:
 
