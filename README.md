@@ -1,6 +1,17 @@
 # Peace
 
-## Prerequisites
+## Spin Up Server
+
+- [https://x5x.host/](https://cp.x5x.host/)
+- [https://neoserver.ru/](https://neoserver.ru/) - easy to clone instance
+
+You can find more VPS providers here [https://vps.today/](https://vps.today/index.php?disk=10&ram=1&cpu=1&pm%5b%5d=1&c%5b%5d=25&os%5b%5d=4&db=1) - filter by country and possibility to pay daily.
+
+## Host Setup
+
+Choose the smallest instance type, but at least with 1Gb RAM. For convenience, install:
+
+- tmux: `apt-get install tmux` - allows running detached ssh session.
 
 Install node v16. For instance, using `nvm`:
 
@@ -14,7 +25,10 @@ nvm use 16
 
 ## Attack
 
-Only `method`, `time` and `threads` arguments are supported.
+1. SSH to your VPS.
+2. Clone this repo.
+3. Install all dependencies mentioned above.
+4. Run. See examples below:
 
 HTTP attack:
 
@@ -27,6 +41,8 @@ UDP attack:
 ```bash
 ./attack.sh --method UDP --time 100 --threads 15
 ```
+
+Only `method`, `time` and `threads` arguments are supported.
 
 ---
 
