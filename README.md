@@ -26,7 +26,7 @@ nvm use 16
 ## Attack
 
 1. SSH to your VPS.
-2. Clone this repo.
+2. Clone this repo. `git clone https://github.com/peacesender/Impulse.git`
 3. Install all dependencies mentioned above.
 4. Run. See examples below:
 
