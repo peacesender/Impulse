@@ -9,9 +9,13 @@ You can find more VPS providers here [https://vps.today/](https://vps.today/inde
 
 ## Host Setup
 
-Choose the smallest instance type, but at least with 1Gb RAM. For convenience, install:
+Choose the smallest instance type, but at least with 1Gb RAM. 
 
-- tmux: `apt-get install tmux` - allows running detached ssh session.
+Highly recommended to install `tmux` to run detached ssh sessions:
+
+```bash
+apt-get install tmux
+```
 
 Install node v16. For instance, using `nvm`:
 
